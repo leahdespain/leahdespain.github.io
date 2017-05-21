@@ -3,56 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <title>Franklin, ID | Weather</title>
-        <meta name="description" content="Short Description of the page.">
+        <meta name="description" content="Weather and conditions for Franklin, ID">
         <meta name="viewport" content="width=device-width">
         <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Sansita');
+        </style>
+
     </head>
     <body>
         <header>
-            <h1>Franklin, ID | Weather</h1>
+            <div class="title">
+                <h1><span class="rotate25">&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+                <h1>Local Weather</h1>
+            </div>
         </header>
         <nav>
             <ul>
                 <li><a href="https://leahdespain.github.io/" title="Go to home page">Home</a></li>
+                <li><a href="#" title="Go to Franklin page">Franklin</a></li>
+                <li><a href="#" title="Go to Greenville page">Greenville</a></li>
+                <li><a href="#" title="Go to Springfield page">Springfield</a></li>
+                <li><a href="#" title="Go to Search page">Search</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Temperature</h2>
-            <p>Current: # <br>
-                Low: 66
-                High: 90
-                </p>
-            <img src="#">
-            <p>Hourly:
-                "0": 67 <br>
-                "1": 67 <br>
-                "2": 69 <br>
-                "3": 69 <br>
-                "4": 69 <br>
-                "5": 70 <br>
-                "6": 69 <br>
-                "7": 72 <br>
-                "8": 74 <br>
-                "9": 77 <br>
-                "10": 79 <br>
-                "11": 81 <br>
-                "12": 84 <br>
-                "13": 86 <br>
-                "14": 88 <br>
-                "15": 90 <br>
-                "16": 90 <br>
-                "17": 85 <br>
-                "18": 83 <br>
-                "19": 79 <br>
-                "20": 74 <br>
-                "21": 70 <br>
-                "22": 68 <br>
-                "23": 66</p>
+            <section class="overview">
+                <h2 class="franklin">Franklin, ID | Weather</h2>
+                <p class="temp">Current: #</p>
+                <div class="current">
+                <img src="#" alt="current conditions icon" class="icon">
+                <p  class="hilo">High/Low:90/66</p>
+                </div>
+            <img src="#" alt="Backgorund image">
+            </section>
+            <section class="cur_conditions">
             <h2>Conditions</h2>
-            <P>"Precipitation": 0 <br>
-                "Wind": "1 - 5" <br>
-                "Direction": "Southwest" <br>
-                "Summary": "Sunny"</P>
+                <P>"Precipitation": 0 <br>
+                    "Wind": "1 - 5" <br>
+                    "Direction": "Southwest" <br>
+                    "Summary": "Sunny"</P>
+            </section>
+            <section class="hourly">
+                <p>Hourly:</p>
+               <ul>
+                   <li>"0": 67</li>
+                   <li>"1": 67</li>
+                   <li>"2": 69</li>
+                   <li>"3": 69</li>
+                   <li>"4": 69</li>
+                   <li>"5": 70</li>
+                   <li>"6": 69</li>
+                   <li>"7": 72</li>
+                   <li>"8": 74</li>
+                   <li>"9": 77</li>
+                   <li>"10": 79</li>
+                   <li>"11": 81</li>
+                   <li>"12": 84</li>
+                   <li>"13": 86</li>
+                   <li>"14": 88</li>
+                   <li>"15": 90</li>
+                   <li>"16": 90</li>
+                   <li>"17": 85</li>
+                   <li>"18": 83</li>
+                   <li>"19": 79</li>
+                   <li>"20": 74</li>
+                   <li>"21": 70</li>
+                   <li>"22": 68</li>
+                   <li>"23": 66</li>
+                </ul>
+            </section>
+
 
         </main>
         <footer>

@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box; /* changes width property
+    to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
+}
+figcaption,
+figure {
+    display: block; /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
+body {
+    margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
+    background-color: salmon;
+    font-family: 'helvetica', georgia, sans-serif;
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+/*Takes out bullets and makes list horizontal*/
+
+nav ul li {
+    width: 100px;
+}
+/*Gives list space for each link*/
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #A6D8DB;
+}
+/*Places nav at the bottom of the page and floats at the bottom of the page*/
+
+h1 {
+    text-align: right;
+}
+/*Aligns header to the right*/
+
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+/*Moves local weather to the right*/
+
+footer{
+    padding-bottom: 100px;
+    background-color: #A6D8DB;
+}
+/*Adds space to the bottom of the page for space bar*/
+
+.current{
+    display: flex;
+    font-size: 14px;
+}
+/* makes both elements horizontal */
+
+.icon{
+    text-align: left;
+}
+/*Aligns the icon to the left*/
+
+.hilo{
+    text-align: right;
+}
+/*Aligns the hilo to the right*/
+
+.hourly{
+    display: none;
+}
+/*Hides this section*/
+
+.cur_conditions{
+    display: none;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+/*Hides this section*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sansita', georgia, sans-serif;
+}
+/*Changes headlines to Sansita*/
+
+.franklin{
+    font-size: 14px;
+}
+/*Changes font size*/
+
+.temp{
+    font-size: 20px;
+}
+/*Changes font size*/
+
+header{
+    background-color: #A6D8DB;
+}
+
+/* unvisited link */
+nav a:link {
+    text-decoration: none;
+    color: #4A4653;
+}
+
+/* visited link */
+nav a:visited {
+    text-decoration: none;
+    color: #4A4653;
+}
+
+/* mouse over link */
+nav a:hover {
+    text-decoration: none;
+    color: #E7EF61;
+}
+
+/* selected link */
+nav a:active {
+    text-decoration: none;
+    color: #A6D8DB;
+}
+
+.rotate25 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+/*Rotate the dice*/
