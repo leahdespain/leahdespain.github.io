@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
 * {
     box-sizing: border-box; /* changes width property
     to total width instead of content width */
@@ -13,8 +15,7 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-image: url("images/sunny-winter.jpg");
-    background-size: cover;
+
 }
 figcaption,
 figure {
@@ -29,6 +30,9 @@ body {
     background-color: salmon;
     font-family: 'helvetica', georgia, sans-serif;
     font-size: 15px;
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav ul {
@@ -64,8 +68,9 @@ h1 {
 /*Moves local weather to the right*/
 
 footer{
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     background-color: #A6D8DB;
+
 }
 /*Adds space to the bottom of the page for space bar*/
 
@@ -91,7 +96,6 @@ footer{
 /*Hides this section*/
 
 .cur_conditions{
-    display: none;
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
@@ -121,6 +125,7 @@ h6 {
 
 header{
     background-color: #A6D8DB;
+
 }
 
 /* unvisited link */
@@ -152,3 +157,11 @@ nav a:active {
     display: inline-block;
 }
 /*Rotate the dice*/
+
+.overview{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+/*makes a box around current conditions*/
